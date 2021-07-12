@@ -1,7 +1,7 @@
 FROM fabric8/java-alpine-openjdk11-jre:1.8
 
 RUN apk update 
-RUN apk add --update \
+RUN apk add --no-cache --update \
     libx11=1.6.12-r1 \
     apk-tools=2.10.6-r0 \
     busybox=1.31.1-r10 \
