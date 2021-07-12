@@ -2,12 +2,13 @@ FROM fabric8/java-alpine-openjdk11-jre:1.8
 
 RUN apk update 
 RUN apk add --no-cache --update \
-    libx11 \
-    apk-tools \
-    busybox \
-    libjpeg-turbo \
-    nghttp2 \
-    openssl \
-    p11-kit \
-    freetype \
-    curl
+    libx11=1.6.12-r1 \
+    apk-tools=2.10.6-r0 \
+    busybox=1.31.1-r10 \
+    libjpeg-turbo=2.0.4-r1 \
+    nghttp2=1.40.0-r1 \
+    openssl=1.1.1k-r0 \
+    p11-kit=0.23.18.1-r1 \
+    freetype=2.10.1-r1 \
+    curl=7.67.0-r4
+RUN apk upgrade 
